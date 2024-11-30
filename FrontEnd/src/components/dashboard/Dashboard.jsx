@@ -23,7 +23,7 @@ const Dashboard = () => {
             console.log(userId);
             formData.append("userId", userId);
             formData.append("query", prompt);
-            const response = await axios.post("http://127.0.0.1:8000/query",formData);
+            const response = await axios.post(`${import.meta.env.VITE_FAST_API_BASE_URL}/query`,formData);
             setMessages((prevMessages) => [
                 ...prevMessages,
                 { role: 'bot', content: response.data.answer },

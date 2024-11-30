@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Layout from "./Layout/Layout"
+import Layout from "./layout/Layout"
 import Home from "./components/home/home";
-import FileUpload from "./components/fileUpload/fileUpload";
+import FileUpload from "./components/fileUpload/FileUpload";
 import Dashboard from "./components/dashboard/Dashboard";
 import Signup from "./components/signup/Signup";
 import Login from "./components/login/Login";

@@ -47,7 +47,7 @@ const FileUpload = () => {
         formData.append("fileName", file.name);
         formData.append("userId", userId);
         
-        const res = await axios.post("http://127.0.0.1:8000/upload-to-pincone", formData);
+        const res = await axios.post(`${import.meta.env.VITE_FAST_API_BASE_URL}/upload-to-pincone`, formData);
 
         console.log(res);
         setFileUploading(false);
