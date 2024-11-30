@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Layout from "./layout/Layout"
-import Home from "./components/home/home";
+import Home from "./components/home/Home";
 import FileUpload from "./components/fileUpload/FileUpload";
 import Dashboard from "./components/dashboard/Dashboard";
 import Signup from "./components/signup/Signup";
