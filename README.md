@@ -111,7 +111,40 @@ DOCUMENTUPLOADANDQUERYING/
 ---
 
 ## Setup Instructions
+### **Setup .env Files**
+1. ***FrontEnd***
+   ```
+   VITE_API_BASE_URL= "Node.js API url goes here"
+   VITE_FAST_API_BASE_URL= "FastAPI url comes here"
+   ```
 
+2. ***Server (Node.JS)***
+   ```
+    MONGODB_URI= "Database URL"
+    PORT= "Port Number default will be 3000"
+    CORS_ORIGIN= "allowed origins [*]"
+    ACCESS_TOKEN_SECRET= "access token secrets" 
+    ACCESS_TOKEN_EXPIRY= "1d"
+    REFRESH_TOKEN_SECRET= "refresh token secrets"
+    REFRESH_TOKEN_EXPIRY= "10d"
+    EMAIL_USER= "email user from which mail will send"
+    EMAIL_PASS= "email app password"
+    GOOGLE_CLIENT_ID= "google client id for OAuth2.0"
+    GOOGLE_CLIENT_SECRET= "google client secret"
+    GOOGLE_CALLBACK_URL= "google callback url"
+
+    AWS_ACCESS_KEY_ID= "AWS Access key id"
+    AWS_ACCESS_KEY= "AWS Access key"
+    AWS_BUCKET_REGION= "AWS S3 bucket region"
+    AWS_S3_BUCKET= "AWS S3 Bucket Name"
+   ```
+
+3. ***Server (FastAPI)***
+   ```
+   UNSTRUCTURED_API_KEY= "API key from unstructred.io"
+   UNSTRUCTURED_API_URL= "API url"
+   PINCONE_API_KEY= "Pincone api keys"
+   ```
 ### **Frontend (React with Vite)**
 1. Navigate to the `FrontEnd` directory.
 2. Install dependencies:
